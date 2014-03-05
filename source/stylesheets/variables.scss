@@ -25,7 +25,7 @@ under the License.
 ////////////////////
 $nav-bg: #3081b7;
 $examples-bg: #3081b7;
-$code-bg: darken($examples-bg, 10%);
+$code-bg: darken($examples-bg, 20%);
 $code-annotation-bg: darken($code-bg, 10%);
 $nav-subitem-bg: darken($nav-bg, 10%);
 $nav-active-bg: #ffffff;
@@ -65,7 +65,7 @@ $h1-margin-bottom: 21px; // padding under the largest header tags
 ////////////////////
 %default-font {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 13px;
+  font-size: 14px;
 }
 
 %header-font {
@@ -75,7 +75,7 @@ $h1-margin-bottom: 21px; // padding under the largest header tags
 
 %code-font {
   font-family: Monaco, "Courier New", monospace;
-  font-size: 12px;
+  font-size: 14px;
 }
 
 
@@ -85,7 +85,7 @@ $nav-active-shadow: #000;
 $nav-footer-border-color: #666;
 $nav-embossed-border-top: 1px solid #000;
 $nav-embossed-border-bottom: 1px solid #404040;
-$main-embossed-text-shadow: 0px 1px 0px #fff;
+$main-embossed-text-shadow: 0px 0px 0px #fff;
 
 
 ////////////////////////////////////////////////////////////////////////////////
