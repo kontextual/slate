@@ -1,10 +1,9 @@
 ---
-title: API Reference
+title: Kontextual API Reference
 
 language_tabs:
   - shell
   - ruby
-  - python
 
 toc_footers:
 ---
@@ -13,7 +12,7 @@ toc_footers:
 
 Welcome to the Kittn API! You can use our API to access Kittn API endpoints, which can get information on various cats, kittens, and breeds in our database.
 
-We have language bindings in Shell, Ruby, and Python! You can view code examples in the dark area to the right, and you can switch the programming language of the examples with the tabs in the top right.
+We have language bindings in Shell, Ruby! You can view code examples in the dark area to the right, and you can switch the programming language of the examples with the tabs in the top right.
 
 This example API documentation page was created with [Slate](http://github.com/tripit/slate). Feel free to edit it and use it as a base for your own API's documentation.
 
@@ -27,12 +26,6 @@ require 'kittn'
 api = Kittn::APIClient.authorize!('meowmeowmeow')
 ```
 
-```python
-import 'kittn'
-
-api = Kittn.authorize('meowmeowmeow')
-```
-
 ```shell
 # With shell, you can just pass the correct header with each request
 curl "api_endpoint_here"
@@ -41,14 +34,12 @@ curl "api_endpoint_here"
 
 > Make sure to replace `meowmeowmeow` with your API key.
 
-Kittn uses API keys to allow access to the API. You can register a new Kittn API key at our [developer portal](http://example.com/developers).
+`API Key` - You can access your API key by contacting us.
 
-Kittn expects for the API key to be included in all API requests to the server in a header that looks like the following:
-
-`Authorization: meowmeowmeow`
+API Key Basics - Your API key will be passed in every API call through a parameter called `apikey`
 
 <aside class="notice">
-You must replace `meowmeowmeow` with your personal API key.
+You must replace `XXXXXXX` with your API key.
 </aside>
 
 # Kittens
@@ -60,13 +51,6 @@ require 'kittn'
 
 api = Kittn::APIClient.authorize!('meowmeowmeow')
 api.kittens.get
-```
-
-```python
-import 'kittn'
-
-api = Kittn.authorize('meowmeowmeow')
-api.kittens.get()
 ```
 
 ```shell
@@ -118,13 +102,6 @@ Remember — a happy kitten is an authenticated kitten!
 require 'kittn'
 
 api = Kittn::APIClient.authorize!('meowmeowmeow')
-api.kittens.get(2)
-```
-
-```python
-import 'kittn'
-
-api = Kittn.authorize('meowmeowmeow')
 api.kittens.get(2)
 ```
 
